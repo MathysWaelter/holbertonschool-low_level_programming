@@ -10,9 +10,7 @@ int main(void)
 	int i;
 
 	if (i == 0)
-	{
 		putchar('0');
-	}
 	if (i / 10 != 0)
 		putchar(i % 10 + '0');
 
