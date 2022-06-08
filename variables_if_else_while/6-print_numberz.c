@@ -13,7 +13,7 @@ int main(void)
 	{
 		putchar('0');
 	}
-	if (I / 10 != 0)
+	if (i / 10 != 0)
 		putchar(i % 10 + '0');
 
 	return (0);
