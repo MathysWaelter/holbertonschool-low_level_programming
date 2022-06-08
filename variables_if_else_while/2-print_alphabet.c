@@ -5,12 +5,11 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int main()
 {
 	char x;
-
-	for (x = 'a'; x <= 'z'; ++x)
-	printf("%x", x);
-
+	for (x = 'a'; x <= 'z'; x++) {
+	printf("%x ", x);
+	}
 	return (0);
 }
