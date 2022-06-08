@@ -5,23 +5,16 @@
  * Return: Always 0 (Success)
  */
 
-void print(long n)
-{
-	if (n < 0)
-	{
-		putchar('-');
-		n = -n;
-	}
-
-	if (n / 10)
-		print(n / 10);
-	putchar(n % 10 + '0');
-}
-
 int main(void)
 {
-	long int n = 9;
+	int n = 48;
 
-	print(n);
+	while (n <= 57)
+	{
+	putchar(n);
+	n++;
+	}
+
+	putchar('\n')
 	return (0);
 }
