@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *  - Print A-Z
+  * _islower - Print A-Z
   *
   * Return: Always 0 (Success)
   */
@@ -10,12 +10,12 @@ int _islower(int c)
 {
 	int a = 0;
 	char low;
-	
+
 	for (low = 'a'; low <= 'z'; low++)
 	{
-		if (low == c )
+		if (low == c)
 			a = 1;
 	}
 
 	return (a);
-}	
+}
