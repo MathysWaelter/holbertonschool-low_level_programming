@@ -2,8 +2,9 @@
 
 /**
   * _islower - Print A-Z
-  *
+  * @c: var
   * Return: Always 0 (Success)
+  *
   */
 
 int _islower(int c)
