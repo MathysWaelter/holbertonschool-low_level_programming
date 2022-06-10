@@ -8,15 +8,17 @@
 void jack_bauer(void)
 {
 	int Hours = 0;
-	int Minutes = 0;
-
+	int Minutes;
 	while (Hours <= 24)
 	{
-		_putchar(Hours);
-		_putchar(':');
-		while (Minutes <= 60)
+		Minutes = 0;
+		while (Minutes <= 59)
 		{
-			_putchar(Minutes);
+			_putchar(Hours / 10 + '0');
+			_putchar(Hours % 10 + '0');
+			_putchar(':');
+			_putchar(Minutes / 10 + '0');
+			_putchar(Minutes % 10 + '0');
 			_putchar('\n');
 			Minutes++;
 		}
