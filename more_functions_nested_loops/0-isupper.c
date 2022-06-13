@@ -2,7 +2,7 @@
 
 /**
  * _isupper - Uppercase
- *
+ * @c: zz
  * Return: Always 0.
  *
  */
@@ -17,6 +17,5 @@ int _isupper(int c)
 		if (up == c)
 			a = 1;
 	}
-		
 	return (a);
 }
