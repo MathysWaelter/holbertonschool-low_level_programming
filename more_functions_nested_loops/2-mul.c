@@ -4,7 +4,6 @@
  * mul - multiplies two integers
  * @a: var
  * @b: var
- * @c: var
  * Return: Always 0.
  */
 
