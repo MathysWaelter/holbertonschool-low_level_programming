@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper - Uppercase
+ * _isdigit - Uppercase
  * @c: zz
  * Return: Always 0.
  *
