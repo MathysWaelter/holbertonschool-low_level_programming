@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * *_strcpy - main
@@ -8,10 +8,12 @@
 
 char *_strcpy(char *dest, char *src)
 {
-        char temp;
+        int temp;
 
-	while ((temp = *dest++) != '\0')
-		*src++ = *dest;
-
-	return (0);
+	for (temp = 0; src[temp] != '\0'; temp++)
+	{
+		dest[temp] = src[temp];
+	}
+	dest[temp] = '\0';
+	return (dest);
 }
