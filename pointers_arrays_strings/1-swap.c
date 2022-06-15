@@ -2,8 +2,8 @@
 
 /**
  * swap_int - swap
- * @*a: point a
- * @*b: point b
+ * @a: point a
+ * @b: point b
  */
 
 void swap_int(int *a, int *b)
