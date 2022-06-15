@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts - print a string
+ * print_rev - print a string
  * @str: var
  */
 
-void _puts(char *str)
+void print_rev(char *str)
 {
 	int i = 0;
 
