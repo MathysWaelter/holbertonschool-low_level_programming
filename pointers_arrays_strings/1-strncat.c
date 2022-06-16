@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * *_strcat - concatenates
+ * *_strncat - concatenates
  * @dest: var
  * @src: var
+ * @n: var
  * Return: Always 0.
  */
 
