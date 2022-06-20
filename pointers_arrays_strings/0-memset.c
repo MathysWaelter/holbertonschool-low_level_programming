@@ -5,13 +5,13 @@
  * @s: pointer
  * @b: constant bytes
  * @n: change bytes
- * return: always 0.
+ * Return: Always 0.
  */
 
 char *_memset(char *s, char b, unsigned int n)
 {
 	while (n != 0)
-	{ 
+	{
 		n--;
 		s[n] = b;
 	}
