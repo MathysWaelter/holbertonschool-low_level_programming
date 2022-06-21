@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strspn - gets length of a prefix 
+ * _strspn - gets length of a prefix
  * @s: var
  * @accept: var
  * Return: always 0.
