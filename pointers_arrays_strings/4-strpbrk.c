@@ -25,18 +25,15 @@ char *_strpbrk(char *s, char *accept)
 				if (x <= j)
 				{
 					j = x;
-					car = 1;
+					car = 2;
 				}
 			}
 		}
 	}
-	if (car == 1)
+	if (car == 2)
 	{
 		return (&s[car]);
 	}
-	else
-	{
 	return (0);
 	}
-}
 
