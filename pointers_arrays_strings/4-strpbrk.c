@@ -9,31 +9,19 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i, x, j;
-	int car = 0;
+	int i, x;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-	j = i;
-	}
-	for (i = 0; accept[i] != '\0'; i++)
-	{
-		for (x = 0; s[x] != '\0'; x++)
+		for (x = 0; accept[x] != '\0'; x++)
 		{
-			if (s[j] == accept[i])
+			if (s[i] == accept[x])
 			{
-				if (x <= j)
-				{
-					j = x;
-					car = 2;
-				}
+			return (&s[i]);
 			}
 		}
 	}
-	if (car == 2)
-	{
-		return (&s[car]);
-	}
 	return (0);
-	}
+}
+
 
