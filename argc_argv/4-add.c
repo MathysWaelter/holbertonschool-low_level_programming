@@ -18,6 +18,11 @@ int main(int argc, char **argv)
 		printf("0\n");
 		return (1);
 	}
+	if (argc = "e")
+	{
+		printf("Error\n");
+		return (1);
+	}
 	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
