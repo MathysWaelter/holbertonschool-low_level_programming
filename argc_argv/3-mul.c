@@ -4,23 +4,21 @@
 
 /**
  * main - execute a program
- * mult - multiplie 
  * @argc: int of argument
  * @argv: char of argument
  * Return: 0;
  */
-int mult(int n1, int n2);
 
 int main(int argc, char **argv)
 {
 	int n1, n2, result;
 
-	if (argc < 2)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	
+
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
 
@@ -30,7 +28,14 @@ int main(int argc, char **argv)
 		return (0);
 }
 
-int mult(int n1,int n2)
+/**
+ * mult - multiplie
+ * @n1: argc[1]
+ * @n2: argc[2]
+ * Return: n1*n2.
+ */
+
+int mult(int n1, int n2)
 {
-	return (n1*n2);
+	return (n1 * n2);
 }
