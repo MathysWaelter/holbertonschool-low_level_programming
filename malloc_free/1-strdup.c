@@ -19,7 +19,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	tab = malloc(size * sizeof(char));
-
+	if (tab == NULL)
+	{
+		return (NULL);
+	}
 	for (i = 0; str[i] != '\0'; i++)
 	{
 		tab[i] = str[i];
