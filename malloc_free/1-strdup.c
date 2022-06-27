@@ -27,8 +27,6 @@ char *_strdup(char *str)
 	{
 		tab[i] = str[i];
 	}
-
-
 	return (tab);
 }
 
