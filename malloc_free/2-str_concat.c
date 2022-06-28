@@ -28,12 +28,13 @@ char *str_concat(char *s1, char *s2)
 	s3 = malloc(lenS1 + lenS2 + 1);
 	memcpy(s3, s1, lenS1);
 	memcpy(s3 + lenS1, s2, lenS2);
-	s3[lenS1 + lenS2] = '\0';
 
 	if (s3 == NULL)
 	{
 		return (NULL);
 	}
+
+	s3[lenS1 + lenS2] = '\0';
 
 	return (s3);
 }
