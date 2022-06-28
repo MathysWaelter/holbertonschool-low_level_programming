@@ -30,5 +30,10 @@ char *str_concat(char *s1, char *s2)
 	memcpy(s3 + lenS1, s2, lenS2);
 	s3[lenS1 + lenS2] = '\0';
 
+	if (s3 == NULL)
+	{
+		return (NULL);
+	}
+
 	return (s3);
 }
