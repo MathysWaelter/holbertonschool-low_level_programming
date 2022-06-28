@@ -25,16 +25,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	
-	if (s3 == NULL)
-	{
-		s3 = "";
-	}
 
 	s3 = malloc(lenS1 + lenS2 + 1);
 	if (s3 == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 	memcpy(s3, s1, lenS1);
 	memcpy(s3 + lenS1, s2, lenS2);
