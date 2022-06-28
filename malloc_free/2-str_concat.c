@@ -12,13 +12,13 @@
 char *str_concat(char *s1, char *s2)
 {
 	char *s3;
-	int lenS1 = 0;
-	int lenS2 = 0;
+	int lenS1 = strlen(s1);
+	int lenS2 = strlen(s2);
 
 	s3 = malloc(lenS1 + lenS2 + 1);
 	memcpy(s3, s1 ,lenS1);
 	memcpy(s3 + lenS1, s2, lenS2);
 	s3[lenS1 + lenS2] = '\0';
 
-	return (0);
+	return (s3);
 }
