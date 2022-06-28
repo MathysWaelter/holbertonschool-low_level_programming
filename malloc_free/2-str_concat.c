@@ -15,8 +15,18 @@ char *str_concat(char *s1, char *s2)
 	int lenS1 = strlen(s1);
 	int lenS2 = strlen(s2);
 
+	if (s1 == NULL)
+	{
+		return (NULL);
+	}
+
+	if (s2 == NULL)
+	{
+		return (NULL);
+	}
+
 	s3 = malloc(lenS1 + lenS2 + 1);
-	memcpy(s3, s1 ,lenS1);
+	memcpy(s3, s1, lenS1);
 	memcpy(s3 + lenS1, s2, lenS2);
 	s3[lenS1 + lenS2] = '\0';
 
