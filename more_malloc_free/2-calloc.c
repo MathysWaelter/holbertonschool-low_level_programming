@@ -1,6 +1,21 @@
 #include "main.h"
 #include <stdlib.h>
 
+void *setZero(void *p ,unsigned int x)
+{
+	char *c;
+	unsigned int i;
+
+	c = p;
+
+	for(i = 0 ; i < x; i++)
+	{
+		c[i] = '\0';
+	}
+	return (c);
+}
+
+
 /**
  * *_calloc - allocates memory
  * @nmemb: array
@@ -10,7 +25,6 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i = 0;
 	char *p;
 
 	if (nmemb == 0)
@@ -22,8 +36,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (p == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
-		p[i] = '\0';
+	setZero(p, nmemb);
 
 	return (p);
 }
