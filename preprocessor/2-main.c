@@ -1,3 +1,3 @@
 #include <stdio.h>
 
-printf ("%s\n", __FILE__);
+printf ("%d\n", __FILE__);
