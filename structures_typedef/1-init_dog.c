@@ -5,7 +5,7 @@
  * init_dog - init var of dof
  * @d: dog
  * @name: dog name
- * @age: dog age 
+ * @age: dog age
  * @owner: dog owner
  */
 
