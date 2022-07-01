@@ -3,7 +3,7 @@
 /**
  * main - exec
  * Return: 0.
- * /
+ */
 
 int main(void)
 {
