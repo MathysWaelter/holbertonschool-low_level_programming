@@ -21,9 +21,9 @@ void print_all(const char * const format, ...)
 
 	if (format)
 	{
-		while(format[i])
+		while (format[i])
 		{
-			switch (format[i]) 
+			switch (format[i])
 			{
 				case 'c':
 					printf("%s%c", empty, va_arg(all, int));
