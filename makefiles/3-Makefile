@@ -3,7 +3,7 @@ CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
-RM=rm -f
+RM=rm
 CFLAGS=-Wall -Werror -Wextra -pedantic
 
 all: $(OBJ)
@@ -11,9 +11,9 @@ all: $(OBJ)
 clean: 
 	$(RM) *~
 oclean:
-	$(RM) *.o
+	$(RM) $(OBJ)
 fclean:
-	$(RM) *~ | *.o
+	$(RM) *~ $(OBJ) $(NAME)
 re: 
 	gcc $(OBJ) -o $(NAME)
 
