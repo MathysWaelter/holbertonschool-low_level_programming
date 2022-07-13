@@ -1,10 +1,9 @@
-
-
 #include "lists.h"
 
 /**
- * list_len - function that prints lenght of a singly linked list
- * @h: node pointer
+ * *add_node - function to add node of a singly linked list
+ * @head: node pointer
+ * @str: string
  * Return: 0.
  */
 
@@ -29,7 +28,7 @@ list_t *add_node(list_t **head, const char *str)
 		free(node);
 		return (NULL);
 	}
-		
+
 	node->len = strlen(node->str);
 	node->next = *head;
 		*head = node;
