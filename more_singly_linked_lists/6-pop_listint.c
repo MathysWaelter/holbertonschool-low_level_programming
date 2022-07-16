@@ -1,5 +1,11 @@
 #include "lists.h"
 
+/**
+ * pop_listint - delete last head node
+ * @head: last node
+ * Return: x
+ */
+
 int pop_listint(listint_t **head)
 {
 	listint_t *temp;
