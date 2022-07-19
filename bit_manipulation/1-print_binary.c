@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_binary - print int to binary 
+ * print_binary - print int to binary
  * @n: long int
  */
 
@@ -16,6 +16,4 @@ void print_binary(unsigned long int n)
 		_putchar((n & 1) + '0');
 	}
 
-}
-	
-		
+}		
