@@ -8,17 +8,14 @@
 
 void print_binary(unsigned long int n)
 {
-	int res = 0;
-	int i = 0;
-	int x;
-
-	while (n != 0)
+	if (n == 0 || n == 1)
+		_putchar(n + '0');
+	else
 	{
-	x = n & 1;
-	n = n >> 1;
-	res = res + x * i;
-	++i;
+		print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
+
 }
 	
 		
