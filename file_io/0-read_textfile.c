@@ -2,8 +2,8 @@
 
 /**
  * read_textfile - read a text file and print
- * @filename: name 
- * @letters: nb of lettre 
+ * @filename: name
+ * @letters: nb of lettre
  * Return: text
  */
 
