@@ -19,7 +19,6 @@ void custom_error(char *filename, int code)
  */
 int main(int ac, char **av)
 {
-	int res;
 	char buf[1024];
 	int fd = 0, wr = 0;
 	char *file_from, *file_to;
