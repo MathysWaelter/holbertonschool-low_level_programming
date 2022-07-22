@@ -50,8 +50,10 @@ int main(int ac, char **av)
 	if (wr == -1)
 		custom_error(file_to, 99);
 	if (cs == -1)
+	{
 		dprintf(2, "Error: Can't close fd FD_VALUE");
 		exit(100);
+	}
 
 	close(fd);
 	return (0);
