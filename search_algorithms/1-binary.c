@@ -46,7 +46,7 @@ int binarySearch(int *array, int low, int high, int target)
 		if (l == h)
 			printf("%d", array[l]);
 		else
-			printf(" %d,", array[l]);
+			printf("%d, ", array[l]);
 	}
 	printf("\n");
 
