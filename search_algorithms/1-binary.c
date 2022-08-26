@@ -39,13 +39,14 @@ int binarySearch(int *array, int low, int high, int target)
 		return (-1);
 	}
 
-	printf("Searching in array:");
+	printf("Searching in array: ");
 
-	for (; l < h; l++)
+	for (; l <= h; l++)
 	{
-		printf(" %d, ", array[l]);
-		if (l == h - 1)
-			printf(" %d", array[l]);
+		if (l == h)
+			printf("%d", array[l]);
+		else
+			printf(" %d,", array[l]);
 	}
 	printf("\n");
 
